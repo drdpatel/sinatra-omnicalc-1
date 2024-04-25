@@ -10,6 +10,10 @@ get("/results") do
 end
 
 get("/square/results") do
+  @the_num = params.fetch("square_with_form").to_f
+
+  @the_result = params.fetch("square_with_form").to_f ** 2
+  
   erb(:square_results)
 end
 
@@ -22,6 +26,7 @@ get("/") do
 end
 
 get("/square/new") do
+  
 
   erb(:square)
 end
