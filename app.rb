@@ -5,17 +5,22 @@ get("/howdy") do
 erb(:hello)
 end
 
+get("/results") do
+  erb(:results)
+end
+
+
 get("/") do
   "
   <h1>Welcome to your Sinatra App!</h1>
   <p>Define some routes in app.rb</p>
   "
   
-
 end
 
 get("/square/new") do
 
+  erb(:square)
 end
 
 get("square-root/new") do
