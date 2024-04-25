@@ -9,6 +9,9 @@ get("/results") do
   erb(:results)
 end
 
+get("/square/results") do
+  erb(:square_results)
+end
 
 get("/") do
   "
