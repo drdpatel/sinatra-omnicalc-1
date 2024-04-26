@@ -37,10 +37,10 @@ end
 
 
 get("random/new") do
-
+  erb(:random)
 end
 
 
 get("/payment/new") do
-
+erb(:payment)
 end
