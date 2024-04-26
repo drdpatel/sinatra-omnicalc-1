@@ -49,6 +49,7 @@ end
 
 get("/payment/new") do
 erb(:payment)
+end
 
 get("/payment/results") do
   @the_apr = params.fetch("apr").to_f
@@ -58,4 +59,4 @@ get("/payment/results") do
   erb(:payment_results)
 end
 
-end
+
