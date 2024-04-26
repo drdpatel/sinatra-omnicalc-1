@@ -30,7 +30,8 @@ end
 
 get("/square_root/results") do
   @the_num = params.fetch("square_root_with_form").to_f
-  @the_result = params.fetch("square_root_with_form").to_f ** 2
+  @the_result_1 = params.fetch("square_root_with_form").to_f
+  @the_result = Math.sqrt(@the_result_1)
   erb(:square_root_results)
 end
 
