@@ -24,14 +24,16 @@ get("/square/results") do
 end
 
 
-
-
-
-get("square-root/new") do
-
+get("/square_root/new") do
   erb(:square_root)
-
 end
+
+get("/square_root/results") do
+  @the_num = params.fetch("square_root_with_form").to_f
+  @the_result = params.fetch("square_root_with_form").to_f ** 2
+  erb(:square_root_results)
+end
+
 
 get("random/new") do
 
