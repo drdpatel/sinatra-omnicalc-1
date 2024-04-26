@@ -14,7 +14,7 @@ get("/results") do
 end
 
 get("/square/new") do
-  
+  erb(:square)
 end
 
 get("/square/results") do
@@ -29,6 +29,7 @@ end
 
 get("square-root/new") do
 
+  erb(:square_root)
 
 end
 
