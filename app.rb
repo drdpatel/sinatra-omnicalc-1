@@ -49,4 +49,13 @@ end
 
 get("/payment/new") do
 erb(:payment)
+
+get("/payment/results") do
+  @the_apr = params.fetch("apr").to_f
+  @the_years = params.fetch("years").to_f
+  @the_principal = params.fetch("principal").to_f
+  @the_result = rand(@the_num_min..@the_num_max)
+  erb(:payment_results)
+end
+
 end
